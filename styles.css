@@ -22,10 +22,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30%;
+    margin-top: 280px;
     font-size: 6em;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.298);
+    color: white;gap:20px;
+    background-color: rgba(0, 0, 0, 0.350);
 }
 
 #logo {
@@ -33,8 +33,8 @@ body {
 }
 
 #image-credit {
-    background-color: rgba(0, 0, 0, 0.298);
-    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.350);
+    font-size: 1.1em;
     text-align: center;
     color: white;
     margin-bottom: 5%;
@@ -55,7 +55,9 @@ body {
 }
 
 .top {
-
+    padding:50px 40px 50px 40px;
+    font-size:1.5em;
+    gap:20px;
     display: flex;
     flex-direction: column;
     height: 30%;
@@ -64,9 +66,15 @@ body {
     font-weight: bold;
 }
 
+.top-text, .bottom-text {
+    max-width:800px;
+    min-width:250px;
+}
+
 .bottom {
-
-
+    height:30%;
+    padding:40px;
+    gap:20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -74,26 +82,55 @@ body {
 }
 
 form {
+    padding:20px 0px 20px 40px;
+    
     height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    
     background-color: white;
 }
 
-form label,
+
 form input {
     width: 200px;
+    height:25px;
 
 }
 
+form label {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.3em;
+}
+
+
+
 .form-row {
     display: flex;
+    gap:40px;
 
 }
 
 .form-item {
     display: flex;
+    gap:5px;
     flex-direction: column;
 }
+
+.call-to-action {
+    align-self:flex-start;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+
+button {
+    font-size: 1em;
+    padding:10px 30px 10px 30px;
+    
+    background-color:rgb(13, 75, 13);
+    color:white;
+    border-radius:5px;
+}
+
+
