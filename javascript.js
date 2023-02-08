@@ -1,9 +1,16 @@
+
+
 function checkPasswordsMatch(input) {
-    if (input.value != document.getElementById("password").value) {
-        input.setCustomValidity("Passwords do not match.")
+    let password = document.getElementById("password");
+    let customPassword = document.getElementById("confirm-password");
+
+    if (customPassword.value && customPassword.value != password.value) {
+        customPassword.setCustomValidity("Passwords do not match.")
+        password.setCustomValidity("Passwords do not match.")
     }
     
     else {
-        input.setCustomValidity("");
+        customPassword.setCustomValidity("");
+        password.setCustomValidity("")
     }
 }

@@ -14,8 +14,8 @@
     <div class="left-container">
         <div class="logo-banner">
             
-            <img src="test.png" alt="logo" id="logo">
-            LOGO
+            <img src="water.svg" alt="logo" id="logo">
+            Woder
         </div>
         <div id="image-credit">
             Unsplash Image by <a href="https://unsplash.com/@marybrennan">
@@ -42,12 +42,12 @@
             <div class="form-row">
                 <div class="form-item">
                     <label for="first-name">First Name</label>
-                    <input required type="text" name="first-name" id="first-name">
+                    <input placeholder=" " required type="text" name="first-name" id="first-name">
                 </div>
                 
                 <div class="form-item">
                     <label for="last-name">Last Name</label>
-                    <input required type="text" name="last-name" id="last-name">
+                    <input placeholder=" " required type="text" name="last-name" id="last-name">
                 </div>
 
             </div>
@@ -56,11 +56,11 @@
 
                 <div class="form-item">
                     <label for="email">Email</label>
-                    <input required type="email" name="email" id="email">
+                    <input placeholder=" " required type="email" name="email" id="email">
                 </div>
                 <div class="form-item">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone">
+                    <input placeholder=" " type="tel" name="phone" id="phone">
                 </div>
 
             </div>
@@ -69,11 +69,16 @@
             <div class="form-row">
                 <div class="form-item">
                     <label for="password">Password</label>
-                    <input required type="password" name="password" id="password">
+                    <input placeholder=" " required type="password"
+                    oninput="checkPasswordsMatch(this)" 
+                    
+                    name="password" id="password">
                 </div>
                 <div class="form-item">
                     <label for="confirm-password">Confirm Password</label>
-                    <input required type="password" name="confirm-password" id="confirm-password" oninput="checkPasswordsMatch(this)">
+                    <input placeholder=" " required  type="password" name="confirm-password" id="confirm-password" 
+                   
+                    oninput="checkPasswordsMatch(this)">
                 </div>
             </div>
 

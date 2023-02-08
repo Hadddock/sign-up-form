@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quattrocento:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
 html,
 body {
+    font-family: 'Lora', serif;
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -17,6 +22,7 @@ body {
 }
 
 .logo-banner {
+    padding:10px;
     width: 100%;
     height: 10%;
     display: flex;
@@ -26,10 +32,11 @@ body {
     font-size: 6em;
     color: white;gap:20px;
     background-color: rgba(0, 0, 0, 0.350);
+    font-family: 'Sofia', cursive;
 }
 
 #logo {
-    height: 100%;
+    height: 90px;
 }
 
 #image-credit {
@@ -51,7 +58,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(235, 233, 233);
-
 }
 
 .top {
@@ -62,7 +68,7 @@ body {
     flex-direction: column;
     height: 30%;
     justify-content: flex-end;
-
+    font-family: 'Quattrocento', serif;
     font-weight: bold;
 }
 
@@ -82,7 +88,8 @@ body {
 }
 
 form {
-    padding:20px 0px 20px 40px;
+    font-family: 'Lora', serif;
+        padding:20px 0px 20px 40px;
     
     height: 30%;
     display: flex;
@@ -94,13 +101,14 @@ form {
 
 
 form input {
+    font-size:1.1em;
     width: 200px;
     height:25px;
 
 }
 
 form label {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+  
     font-size:1.3em;
 }
 
@@ -122,15 +130,46 @@ form label {
     align-self:flex-start;
     font-size: 1.5em;
     font-weight:bold;
+    font-family: 'Quattrocento', serif;
 }
 
 button {
-    font-size: 1em;
+    font-family: 'Lora', serif;
+    font-size: 1.3em;
     padding:10px 30px 10px 30px;
     
-    background-color:rgb(13, 75, 13);
+    background-color:rgb(37, 85, 122);
     color:white;
     border-radius:5px;
 }
 
 
+input:invalid {
+    transition: 0.4s ease;
+    background: hsla(0, 90%, 70%, 1);
+    outline: 2px;
+    outline-color:red; 
+}
+
+input:valid {
+    transition: 0.4s ease;
+    background: hsla(100, 90%, 70%, 1);
+    outline: 2px;
+    outline-color:green;
+}
+
+input:placeholder-shown {
+    transition: 0.4s ease;
+    background:white;
+
+    outline: 1px;
+    outline-color:black;
+}
+
+input:focus {
+    transition: 0.4s ease;
+
+    background: rgb(227, 244, 255);
+    outline: 2px;
+    outline-color:blue;
+}
